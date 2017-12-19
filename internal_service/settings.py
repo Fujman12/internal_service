@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'enterprise_model',
     'watchlist',
     'profile_app',
+    'api_v0',
 ]
 
 MIDDLEWARE = [
