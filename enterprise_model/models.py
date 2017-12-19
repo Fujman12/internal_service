@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.postgres.fields import JSONField
 
 
 class Domain(models.Model):
@@ -31,7 +32,7 @@ class Resource(models.Model):
 class Instance(models.Model):
     external_identifier = models.CharField(u'External identifier',  max_length=255)
     resource = models.ForeignKey(Resource, related_name='related_resource', on_delete=models.CASCADE)
-    data = models.TextField(u'Data')
+    data = JSONField(u'Data')
 
     class Meta:
         verbose_name = u'Instance'
