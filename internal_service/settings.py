@@ -37,11 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     # 3th party
     'rest_framework',
+    'phonenumber_field',
 
-    #app
+    # app
     'enterprise_model',
+    'watchlist',
 ]
 
 MIDDLEWARE = [
