@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # app
     'enterprise_model',
     'watchlist',
+    'profile_app',
 ]
 
 MIDDLEWARE = [
